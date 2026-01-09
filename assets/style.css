@@ -1,0 +1,97 @@
+
+:root{
+  --bg:#0b0f14;
+  --card:#111824;
+  --text:#e8eef6;
+  --muted:#b7c3d0;
+  --accent:#4da3ff;
+  --border:rgba(255,255,255,.10);
+  --shadow: 0 12px 40px rgba(0,0,0,.35);
+  --radius:18px;
+  --max:1120px;
+  --font: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--max);margin:0 auto;padding:0 18px}
+.topbar{background:#070a0f;border-bottom:1px solid var(--border)}
+.topbar .row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+.badge{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:14px}
+.badge b{color:var(--text)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:10px 14px;border:1px solid var(--border);background:transparent;color:var(--text);font-weight:600}
+.btn.primary{background:var(--accent);border-color:transparent;color:#04101f}
+.btn.small{padding:8px 12px;font-size:14px}
+.nav{position:sticky;top:0;background:rgba(11,15,20,.85);backdrop-filter: blur(10px);border-bottom:1px solid var(--border);z-index:30}
+.nav .row{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(77,163,255,.18)}
+.links{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:flex-end}
+.links a{color:var(--muted);font-weight:600;font-size:14px}
+.links a:hover{color:var(--text)}
+.hero{padding:52px 0 26px}
+.hero-grid{display:grid;grid-template-columns: 1.15fr .85fr;gap:18px;align-items:stretch}
+@media (max-width: 920px){.hero-grid{grid-template-columns:1fr}}
+.panel{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+.hero .panel{padding:26px}
+.kicker{color:var(--muted);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+h1{margin:10px 0 10px;font-size:44px;line-height:1.1}
+@media (max-width:520px){h1{font-size:34px}}
+.sub{color:var(--muted);font-size:18px;margin:0 0 18px}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.quote{padding:18px}
+h2{margin:0 0 8px;font-size:26px}
+h3{margin:0 0 6px;font-size:20px}
+.section{padding:26px 0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width: 920px){.grid3{grid-template-columns:1fr}}
+.card{padding:18px;border-radius:var(--radius);border:1px solid var(--border);background:rgba(255,255,255,.03)}
+.card p{margin:0;color:var(--muted)}
+.icon{width:38px;height:38px;border-radius:12px;background:rgba(77,163,255,.14);border:1px solid rgba(77,163,255,.25);display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.icon svg{width:20px;height:20px;fill:var(--accent)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.form .full{grid-column:1/-1}
+label{display:block;font-size:13px;color:var(--muted);font-weight:700;margin:2px 0 6px}
+input,select,textarea{width:100%;padding:12px 12px;border-radius:12px;border:1px solid var(--border);background:#0b121c;color:var(--text);outline:none}
+textarea{min-height:88px;resize:vertical}
+.smallnote{color:var(--muted);font-size:12px;margin-top:10px}
+.hr{height:1px;background:var(--border);margin:18px 0}
+.faq details{border:1px solid var(--border);border-radius:14px;padding:14px;background:rgba(255,255,255,.03)}
+.faq details+details{margin-top:10px}
+.faq summary{cursor:pointer;font-weight:800}
+.faq p{margin:10px 0 0;color:var(--muted)}
+.footer{padding:24px 0 40px;border-top:1px solid var(--border);margin-top:28px}
+.footer-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+@media (max-width: 920px){.footer-grid{grid-template-columns:1fr}}
+.footer .muted{color:var(--muted);font-size:14px}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills a{border:1px solid var(--border);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:650;font-size:13px}
+.pills a:hover{color:var(--text)}
+.notice{font-size:12px;color:var(--muted)}
+
+
+/* v2: remove reliance on "commercial building" photography; use clean residential-friendly tiles */
+.hero-visual{
+  border-radius: var(--radius);
+  border:1px solid var(--border);
+  background:
+    radial-gradient(1200px 320px at 20% 10%, rgba(77,163,255,.25), transparent 60%),
+    radial-gradient(900px 260px at 80% 0%, rgba(255,255,255,.10), transparent 55%),
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  padding:18px;
+  box-shadow: var(--shadow);
+}
+.tile{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+}
+.tile .tileicon{
+  width:44px;height:44px;border-radius:14px;
+  background:rgba(77,163,255,.14);
+  border:1px solid rgba(77,163,255,.25);
+  display:flex;align-items:center;justify-content:center;flex:0 0 auto;
+}
+.tile .tileicon svg{width:22px;height:22px;fill:var(--accent)}
+.tile p{margin:0;color:var(--muted)}
