@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DSCRFinancing.com | DSCR Loans for Real Estate Investors</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="call">📞 Call or Text: (123) 456-7890</div>
+      <a class="btn" href="#quote">Apply</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="brand">DSCRFinancing.com</div>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#">Loan Programs</a>
+        <a href="#">Meet Patrick</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image:url('assets/images/hero.jpg')">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>DSCR Loans for Real Estate Investors</h1>
+        <p>No income verification. Qualify based on property cash flow.</p>
+      </div>
+
+      <div class="quote" id="quote">
+        <div class="quote-title">Get a Quick Quote</div>
+
+        <form class="form" id="quickQuoteForm">
+          <label for="loanType">Loan Type</label>
+          <select id="loanType" name="loanType" required>
+            <option value="purchase" selected>Purchase</option>
+            <option value="refinance">Refinance</option>
+          </select>
+
+          <div id="purchaseFields">
+            <label for="purchasePrice">Purchase Price</label>
+            <input id="purchasePrice" name="purchasePrice" type="number" inputmode="numeric" placeholder="$" min="0" />
+
+            <label for="downPayment">Down Payment</label>
+            <input id="downPayment" name="downPayment" type="text" placeholder="Example: 20% or $80,000" />
+          </div>
+
+          <div id="refiFields" style="display:none;">
+            <label for="estimatedValue">Estimated Value</label>
+            <input id="estimatedValue" name="estimatedValue" type="number" inputmode="numeric" placeholder="$" min="0" />
+
+            <label for="requestedLoanAmount">Requested Loan Amount</label>
+            <input id="requestedLoanAmount" name="requestedLoanAmount" type="number" inputmode="numeric" placeholder="$" min="0" />
+          </div>
+
+          <label for="propertyType">Property Type</label>
+          <select id="propertyType" name="propertyType" required>
+            <option value="" selected disabled>Select</option>
+            <option>SFR</option>
+            <option>2–4 Unit</option>
+            <option>Condo</option>
+            <option>Townhome</option>
+            <option>Short-Term Rental</option>
+            <option>Mixed-Use</option>
+            <option>Other / Not Sure</option>
+          </select>
+
+          <div class="row2">
+            <div>
+              <label for="fullName">Name</label>
+              <input id="fullName" name="fullName" type="text" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+          </div>
+
+          <button type="submit">Get My Quote</button>
+
+          <div class="form-note">This form is for a quick estimate. We’ll confirm details on the follow‑up call.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Loan Programs</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img src="assets/images/program-airbnb.jpg" alt="Airbnb / STR" />
+          <div class="card-title">Airbnb / STR Loans</div>
+        </div>
+        <div class="card">
+          <img src="assets/images/program-fixflip.jpg" alt="Fix and Flip" />
+          <div class="card-title">Fix &amp; Flip Loans</div>
+        </div>
+        <div class="card">
+          <img src="assets/images/program-mixeduse.jpg" alt="Mixed-use" />
+          <div class="card-title">Mixed‑Use Properties</div>
+        </div>
+        <div class="card">
+          <img src="assets/images/program-carehome.jpg" alt="Care home" />
+          <div class="card-title">Care Homes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© Coast2Coast Mortgage. All rights reserved.</div>
+      <div class="muted">NMLS #____ • Equal Housing Lender</div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
